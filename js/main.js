@@ -63,6 +63,8 @@ let squadre = [
    {nome: 'Napoli', punti: 0, falliSubiti: 0},
 ];
 
+let newArrey = [];
+
 for (let i = 0; i < squadre.length; i++) {
    let rnd = Math.floor((Math.random() * 100) + 1);
    let rnd1 = Math.floor((Math.random() * 100) + 1);
@@ -70,12 +72,11 @@ for (let i = 0; i < squadre.length; i++) {
    squadre[i].falliSubiti = rnd1;
    // console.log(squadre[i].punti);
    // console.log(squadre[i].falliSubiti);
-   let newArrey = [];
    let {nome, falliSubiti} = squadre[i];
    // console.log({nome, falliSubiti});
    newArrey.push({nome, falliSubiti});
-   console.log(newArrey);
 }
+console.log(newArrey);
 
 
 // // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
